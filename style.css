@@ -1,0 +1,131 @@
+/*
+Theme Name: Parchment Draft
+Theme URI: http://www.the-cloisters.net/wordpress-themes/parchment-draft-theme/
+Description: 2-column fixed-width theme in reminiscent of old parchment paper. Featuring an Author Info page and gravatars along with Custom Archives, Sitemap and Full-Width No Sidebars page templates.  Tested in Firefox, Opera, Safari, IE6 and IE7.  Compatible up to WordPress 2.8 and is XHTML 1.0 Transitional and CSS 2.1 valid out of the box.
+Author: Mina
+Author URI: http://www.the-cloisters.net
+version: 1.1
+Tags: brown, two-columns, right-sidebar, threaded-comments, fixed-width
+
+This theme is released under GPL License. (http://www.opensource.org/licenses/gpl-license.php).  There are no restrictions to the use of this theme.  I'd appreciate it if you left my link in the footer but I won't send the Theme Police 'round to your house if you don't.
+*/
+
+
+* { margin: 0; padding: 0; }
+	
+h1 { font-size: 18px; }
+h2 { font-size: 18px; color: #47411e; margin: 0 0 10px 0; padding: 0; }
+h3 { font-size: 12px; color: #666972; letter-spacing: 3px; margin: 0 0 5px 0; padding: 0; }
+h4 { font-size: 10px; color: #666972; letter-spacing: 3px; margin: 5px 0 0 0; padding: 0; }
+
+a { color: #61574a; text-decoration: none; }
+a:hover { color: #61574a; text-decoration: underline; }
+blockquote { color: #61574a; font-style: italic; margin: 25px; padding: 10px 20px 0 20px; border: #e6ddbc 1px solid; }
+code { font-family: "Courier New", Courier, sans; }
+cite { font-family: Arial, Verdana, Tahoma; font-size: 9px; font-weight: bold; font-style: normal; }
+cite a { color: #000; text-decoration: none; border-bottom: 1px dotted #465d71; }
+ul { list-style-type: none; }
+acronym, abbr, span.caps { font-size: 0.9em; letter-spacing: .07em; }
+.sticky { background: #4c4c42; padding: 0 10px 10px; }
+.sticky h2 { padding-top: 10px; }
+html>body .entry ul { margin-left: 0px; padding: 0 0 0 30px; list-style: none; padding-left: 10px; text-indent: -10px; }
+html>body .entry li { margin: 7px 0 8px 10px; }
+.entry ul li:before { content: "\00BB \0020"; } 
+.entry ol { padding: 0 0 0 35px; margin: 0; }
+.entry ol li { margin: 0; padding: 0; }
+
+.alignleft a { float: left; margin: 25px 0; }
+.alignright a { float: right; margin: 25px 0; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/*****LAYOUT*****/
+body { background: #83673b url(images/body_bg.jpg) repeat; color: #544b40; font-family: Georgia, Times New Roman, Verdana, Arial, Tahoma, sans-serif; font-size: .8em; margin: 0; padding: 0; }
+#container { background: #e6ddbc url(images/page_bg.jpg) repeat-y; width: 900px; margin: 0 auto; padding: 0; overflow: hidden; }
+#container_wide { width: 95%; float: left; margin: 0 auto; padding: 0 0 0 10px; }
+#content { width: 640px; float: left; margin: 10px 0 10px 10px; padding: 0; }
+.post { margin: 0 0 10px 0; padding: 10px; line-height: 14px; text-align: left; }
+.entry p { margin: 12px 0; }
+.date { clear: both; padding: 0 0 5px 0; margin: 0; }
+.postmetadata {font-size: 11px; clear: both; padding: 6px; margin: 20px 0; }
+.navigation { width: 100%; float: left; margin: 0; padding: 0; overflow: hidden; }
+
+/*****HEADER*****/
+#header { background: url(images/header.jpg) no-repeat; width: 900px; height: 100px; margin: 0 0 10px 0; padding: 0; overflow: hidden; }
+.branding h1, .branding h1 a { text-align: center; font-size: 175%; font-family: Georgia, Times New Roman, Serif; margin: 0; padding: 25px 10px 0 10px; color: #47411e; letter-spacing: 3px; font-weight: normal; font-variant: small-caps; }
+.branding h1 a:hover { color: #bbb; text-decoration: none; }
+.branding h2 { text-align: center; font-size: 16px; font-family: Georgia, Times; font-weight: normal; font-style: italic; color: #61574a; padding: 0 0 0 25px; margin: 0 20px 5px 0; }
+
+/*****HORIZONTAL MENU*****/
+#menu { width: 890px; height: 30px; line-height: normal; border-top: 1px solid #e6ddbc; border-bottom: 1px solid #e6ddbc; margin: 0 auto; }
+#menu ul { margin: 0; padding: 5px 0; }
+#menu ul li { list-style-type: none; float: left; margin: 0; padding: 0 0 0 4px; text-decoration: none; }
+#menu ul li a { float: left; margin: 0; padding: 5px; text-decoration: none; }
+#menu ul li a:hover { float: left; margin: 0; padding: 5px; text-decoration: underline; }
+
+/*****SIDEBAR*****/
+#sidebar { font-size: 11px; width: 210px; float: left; margin: 0 0 10px 25px; padding: 10px 0; }
+#sidebar h2 { font-size: 14px; font-style: italic; letter-spacing: 3px; }
+#sidebar p { margin: 0; padding: 0 6px 0 12px; }
+#sidebar ul { margin: 0 10px 5px 10px; padding: 0; }
+#sidebar ul li { margin: 0; padding: 0; line-height: 14px; list-style-type: none; }
+#sidebar ul ul { margin: 0 0 14px 0; padding: 0; }
+#sidebar ul ul li { list-style-type: none; }
+#sidebar ul ul ul { margin: 0; padding: 0; }
+#sidebar ul ul ul li { padding: 0 0 0 15px; list-style-type: none; color: #898989; }
+
+/*****COMMENTS*****/
+#commentform { color: #544b40; margin: 0; padding: 10px; }
+#commentform p { color: #000; }
+#commentform a { color: #544b40; text-decoration: none; line-height: 14px; }
+#commentform h3 { font-size: 10px; font-weight: 300; color: #000; margin: 0; padding: 0; }
+#comment { width: 80%; }
+#author, #email, #url, #comment, #submit { background: #efebd6; font-size: 8px; margin: 5px 5px 0 0; padding: 0; }
+.avatar { width: 36px; height: 36px; float: left; margin: 0 12px 0 0; }
+#submit { margin: 5px 5px 0 0; }
+#comments { margin: 0; padding: 0 }
+ol.commentlist { background: #e6ddbc; list-style-type: none; margin: 5px 0; padding: 5px 0 5px 5px; border: #61574a 1px solid; }
+ol.commentlist li { width: 97%; margin: 10px 0; padding: 5px 0 5px 10px; list-style-type: none; border: #61574a 1px solid; }
+ol.commentlist li.alt { width: 97%; }
+ol.commentlist li p { color: #544b40; margin: 6px 0 6px 0; padding: 0 12px 0 0; line-height: 14px; }
+ol.commentlist a { color: #544b40; }
+
+/*****SEARCH*****/
+#searchform { padding: 0; margin: 14px 0; }
+#searchform input#s { color: #677278; width: 85%; background: #eee; margin: 0; padding: 2px; border: 1px solid #677278; float: left; }
+#searchform input#searchsubmit { border: none; background: #eee; color: #677278; text-transform: lowercase; }
+
+/***** SUBSCRIPTION *****/
+.subscribe  { width: 32px; float: left; margin: 0; padding: 0; text-decoration: none; }
+.subscribe img { border: none; margin: 0 0 0 10px; padding: 0; }
+
+/***** Calendar *****/
+#wp-calendar { text-align: center; background: #e6ddbc; margin: 0 0 10px 0; padding: 0; width: 90%; border: #3f3013 1px solid; font-variant: small-caps; }
+#wp-calendar td { line-height: 10px; font-size: 10px; color: #61574a; font-variant: small-caps; }
+#wp-calendar td a { display: block; color: #61574a; text-decoration: none; line-height: 10px; font-weight: bold; font-variant: small-caps; font-size: 10px; }
+#wp-calendar #prev a { width: 30px; font-variant: small-caps; }
+#wp-calendar #next a { width: 30px; margin: 0 0 0 30px; font-variant: small-caps; }
+#wp-calendar #today { background: #600000; color: #e6ddbc; font-variant: small-caps; }
+#wp-calendar #today a { color: #544b40; font-weight: 700; font-variant: small-caps; }
+#wp-calendar caption { color: #61574a; text-align: left; width: 100%; margin: 5px 0; font-size: 14px; }
+	
+/*****IMAGES*****/
+img.centered { display: block; margin: 0 auto; }
+img.alignright { float: right; padding: 0; margin: 0 0 2px 7px; display: inline; }
+img.alignleft { float: left; padding: 0; margin: 0 7px 2px 0; display: inline; }
+img { border: #666972 2px solid; padding: 0; }
+img a { border: #666972 2px solid; }
+img.left { float: left; padding: 6px 0 0 0; }
+img.right { float: right; padding: 0 0 0 6px; }
+.alignright { float: right; }
+.alignleft { float: left }
+.aligncenter { display: block; margin: 4px auto; }	
+.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; }
+.wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
+.post .wp-smiley { border: none; }
+
+/*****FOOTER*****/
+#footer { background: url(images/footer.jpg) no-repeat; clear: both; float: left; width: 900px; height: 35px; margin: 0 auto; padding: 0; text-align: right; font-style: italic;}
+#footer p { padding: 10px 10px 0 10px; }
+#footer a { text-decoration: none; }
+#footer a:hover { color: #333; text-decoration: none; }
