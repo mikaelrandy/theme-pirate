@@ -1,4 +1,4 @@
-				<div id="footer">
+			<div id="footer">
 
 				<div class="subscribe">           
 				    <a href="<?php bloginfo('rss2_url'); ?>" title="<?php _e('Add this blog to any reader'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/rss.gif" alt="RSS" /></a>

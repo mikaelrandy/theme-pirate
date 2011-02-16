@@ -198,6 +198,13 @@ body {
 	overflow: 			hidden;
 }
 
+#picture {
+	float:				right;
+	height: 			268px;
+	width: 				200px;
+	background-image: 	url(images/couple-pirate.png);
+}
+
 /*****HEADER*****/
 #header {
 	background: 		url(images/header.jpg) no-repeat;
@@ -276,8 +283,11 @@ body {
 
 /*****SIDEBAR*****/
 #sidebar {
+	background: 		url(images/couple-pirate.png) no-repeat;
+	background-position: bottom right;
 	font-size: 			12px;
 	width: 				210px;
+	min-height: 		500px;
 	float: 				left;
 	margin: 			0 0 10px 25px;
 	padding: 			10px 0;
